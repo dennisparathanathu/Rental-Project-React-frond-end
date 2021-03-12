@@ -1,0 +1,19 @@
+.HomeBanner{
+    width: 100%;
+    object-fit: cover;
+}
+.Categories__available{
+    display: flex;
+    flex-direction: column;
+}
+.Category__title{
+    text-align: center;
+}
+.Actual__categories{
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 2em;
+}
+.Categories__instock{
+    margin-left: 6em;
+}

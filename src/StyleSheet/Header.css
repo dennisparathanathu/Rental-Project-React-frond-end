@@ -1,0 +1,49 @@
+.Header__container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 2em;
+}
+.Header__leftContainer{
+    width: 20%;
+}
+.Header__leftContainerLogo{
+    width: 50%  ;
+}
+.Header__centerContainer{
+    display: flex;
+    align-items: center;
+    border: 2px solid black;
+    width: 60%;
+}
+.Header__centerContainerInput{
+    flex: 1;
+    border: none;
+    padding: 0.5em 2em;
+}
+.Header__centerContainerIcon{
+    border-left: 2px solid grey;
+    background-color: black;
+    color: white;
+    padding: .4em 0em;
+}
+.Header__rightContainer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    
+}
+.Header__rightContainerText{
+    margin-right: 0.8em;
+}
+.Header__rightContainerbutton{
+    border-radius: 999px;
+    padding: 0.5em 2em;
+
+}
+.Header__rightContainerbutton:hover{
+    transition: ease-in-out .4s;
+    background-color: black;
+    color: white    ;
+}
