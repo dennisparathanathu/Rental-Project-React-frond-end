@@ -1,8 +1,7 @@
 import React, {useState, useEffect} from 'react'
+import { Link } from "react-router-dom";
 import axios from 'axios';
 import '../StyleSheet/Products.css';
-
-
 
 const Products = () => {
     const [mounted, setMounted] = useState(true);
@@ -32,9 +31,11 @@ const Products = () => {
                     {
                     product.map(item =>{
                         return <div className="Item">
-                            <img src={item.image} alt=""/>
-                            <h4>{item.productname}</h4>
-                            <h3>{`Owner: ${item.owner}`}</h3>
+                            <Link to={`/productdetail/${ item._id }`} >
+                                <img src={item.image} alt=""/>
+                                <h4>{item.productname}</h4>
+                                <h3>{`Rent/day: ${item.rentperday}`}</h3>
+                            </Link>
                         </div>
                     })
                 }
